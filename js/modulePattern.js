@@ -7,7 +7,9 @@ var counter = (function(){
     }
 
     return{
-        value: count,
+        // value: count,
+        get: function(){return count;},
+        set: function(value){count = value;},
         increment: function(){
             count += 1;
             // count = count + 1;
@@ -21,12 +23,22 @@ var counter = (function(){
     }
 })();
 
-console.log(counter.count);
+// console.log(counter.count);
 // console.log(counter.value);
-console.log(counter.increment());
-console.log(counter.increment());
-console.log(counter.increment());
-console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.reset());
+// console.log(counter.increment());
 // console.log(counter.value);
 
 
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+
+counter.set(7);
+console.log(counter.get());
+counter.reset();
