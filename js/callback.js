@@ -8,7 +8,7 @@ console.log(typeof callback);*/
 // taskTwo();
 // taskThree();
 
-function taskOne(){
+/*function taskOne(){
     console.log('Task 1')
 }
 
@@ -17,12 +17,33 @@ function taskTwo(){
 }
 
 setTimeout(taskOne, 2000);
-taskTwo();
+taskTwo();*/
 
 // function taskThree(){
 //     console.log('Task 3')
 // }
 
-const message = function () {
-    
-}
+
+// const message = function () {
+//     console.log('This message will be shown after 3 seconds');
+// }
+
+// setTimeout(message, 3000);
+
+
+/*setTimeout(function(){
+    console.log('This anonymous function will run after 3 seconds')
+}, 3000);*/
+
+
+/*setTimeout(() => {
+    console.log('This arrow function will run after 3 seconds')
+}, 3000);*/
+
+// document.querySelector('#çallbact_btn').addEventListener('click',function(){
+//     console.log('This is a callback, Regie is here for testing')
+// });
+
+document.querySelector('#callback__btn').addEventListener('click',function(){
+    console.log('This is a callback, Regie is here for testing.')
+});
