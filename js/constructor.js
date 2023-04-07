@@ -18,12 +18,14 @@ console.log(epd);*/
 
 
 function MyFunction(){
-    console.log("Regie, is create a simple function.")
+    return {console: console.log("Regie is here, is create a simple function.")}
 }
 
-let MyFunction = new MyFunction();
+let myFunction = new MyFunction();
 console.log(MyFunction);
 console.log(typeof MyFunction);
 
-console.log(MyFunction);
-console.log(typeof MyFunction)
+console.log(myFunction);
+console.log(typeof myFunction);
+
+console.log(myFunction.console);
